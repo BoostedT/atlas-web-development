@@ -5,7 +5,9 @@ In this project, I will be using the basics of HTML, focusing on the <head> tag 
 
 # About the <head> tag
 
-The <head> tag is a crucial part of any HTML document. It contains metadata about the webpage and links to external resources that influence the page's structure, styling, and behavior.
+The <head> tag is a crucial part of any HTML document. 
+
+It contains metadata about the webpage and links to external resources that influence the page's structure, styling, and behavior.
 
 # Why the <head> tag is important
 Practice foundational HTML skills.
@@ -14,7 +16,10 @@ Create something you can show off to friends, family, or potential employers.
 
 Learn how to make your site look good and work well across devices.
 
-## Authors
+# What is SEO
+
+
+# Authors
 
 - [@Tyler Whitchurch](https://www.github.com/BoostedT)
 
