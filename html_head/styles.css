@@ -1,10 +1,19 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    min-height: 100vh;
     padding: 0;
-    background-color: #000000;
-    color: #ffffff;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
     text-align: center;
+    color: white;
+}
+
+body h2 {
+    color: #49c56c;
 }
 
 nav {
@@ -60,15 +69,45 @@ section {
 }
 
 footer {
+    position: absolute;
     text-align: center;
-    padding: 10px;
-    background-color: #4caf50;
-    color: white;
+    padding: 10px 0;
+    bottom: 0%;
+    width: 100%;
+    height: auto;
+    color: rgb(255, 255, 255);
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+.slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
 }
+.slides {
+    display: none;
+    width: 100%;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+.next { right: 0; }
+.prev { left: 0; }
+.dots { text-align: center; margin-top: 10px; }
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.active { background-color: #717171; }

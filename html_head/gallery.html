@@ -12,10 +12,24 @@
         <a href="index.html">Home</a>
         <a href="gallery.html">Gallery</a>
     </nav>
-    <h2>Media Gallery</h2>
-    <img src="images/snowboarding.jpg" alt="Snowboarding">
+    <div class="slideshow-container">
+        <h1>Tyler's Slideshow</h1>
+        <img class="slides" src="images/snowboarding.jpg" alt="Snowboarding">
+        <img class="slides" src="images/gaming.jpg" alt="Gaming">
+        <img class="slides" src="images/programming.jpg" alt="Programming">
+                
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
     <footer>
         <p>Created by: Tyler Whitchurch</p>
         <a href="github.com/BoostedT">GitHub</a>
 </body>
+
+<script src="script.js"></script>
 </html>
