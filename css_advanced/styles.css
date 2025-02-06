@@ -119,9 +119,9 @@ body {
   word-spacing: 5em;
 }
 .pros-section {
-    position: relative;
-    padding-top: 0;
-    margin-top: -30%;
+  position: relative;
+  padding-top: 0;
+  margin-top: -20%;
 }
 .pros {
   width: 100%;
@@ -187,101 +187,326 @@ body {
 
 /* Quotes Section */
 .quotes {
-  background-color: #f4f4f4;
-  padding: 50px 20px;
+  background-color: #c271ff;
+  padding: 75px 20px;
   text-align: center;
+  font-family: "Source Sans Pro";
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 10px auto;
+  gap: 30px;
 }
 
 .quote img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text-content {
+  color: #fff;
+  text-align: left;
+  margin-top: 0;
+}
+
+.quote-text {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.quote-author {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.quote-role {
+  font-size: 14px;
+  font-style: italic;
+  color: #e0e0e0;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
 }
 
 /* Videos Section */
 .videos {
-  padding: 50px 20px;
   text-align: center;
+  padding: 60px 0;
+  font-family: "Source Sans Pro";
+}
+
+.videos h1 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #333;
+}
+
+.videos h1 span {
+  font-weight: 700;
+  color: #a259ff;
 }
 
 .video-block {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: inline-block;
+  width: 250px;
+  background: #fff;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.video-block:hover {
+  transform: translateY(-5px);
 }
 
 .video-item {
-  width: 250px;
-  margin: 20px;
+  padding: 15px;
+  text-align: left;
 }
 
-.video-item img {
+.video-1 {
   width: 100%;
-  height: auto;
+  border-bottom: 3px solid #e5e5e5;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  opacity: 0.9;
+}
+
+.thumbnail-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.min {
+  font-size: 12px;
+  color: #c271ff;
+}
+
+.lorem-ipsum-dolor {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.diagonal-smile {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin: 10px 0;
+}
+
+.rating-icon {
+  width: 100px;
+  margin: 5px 0;
+}
+
+.video-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.phillip-massey {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #c271ff;
+  margin-top: 10px;
+}
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
 }
 
 /* Membership Section */
-.membership {
-  background-color: #333;
+.membership-section {
+  background-color: #071629;
   color: #fff;
-  padding: 50px 20px;
+  font-family: "Source Sans Pro";
+  text-align: center;
+  padding: 60px 0;
+}
+
+.membership-heading {
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.membership-heading span {
+  color: #a259ff;
+  font-weight: 700;
+}
+
+/* Grid for the items */
+.membership-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.membership-item {
   text-align: center;
 }
 
-.membership-blocks {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.membership-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
 }
 
-.membership-block {
-  width: 200px;
-  margin: 20px;
+.membership-item h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.membership-block img {
-  width: 50px;
-  height: 50px;
+.membership-item p {
+  font-size: 14px;
+  color: #d0d0d0;
+}
+
+/* Button styles */
+.membership-button-container {
+  margin-bottom: 70px;
+}
+
+.membership-button {
+  background-color: #a259ff;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.membership-button:hover {
+  background-color: #822dd6;
 }
 
 /* FAQ Section */
+
 .faq {
-  padding: 50px 20px;
+  background-color: #ffffff;
+  padding: 0px 0px 50px;
   text-align: center;
+  font-family: "Source Sans Pro";
+  color: #071629;
+}
+
+.faq-text {
+  width: 350px;
+  position: relative;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Source Sans Pro";
+  color: rgba(7, 22, 41, 0.5);
+  text-align: left;
+  display: inline-block;
 }
 
 .faq-blocks {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .faq-block {
-  width: 250px;
-  margin: 20px;
+    text-align: left;
+    padding: 20px;
+}
+
+.faq h1 {
+    font-size: 60px;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: "Source Sans Pro";
+    display: inline-block;
+}
+
+.faq h2 {
+    font-size: 16px;
+    font-family: "Source Sans Pro";
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 /* Footer */
 footer {
-  background-color: #222;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+    background-color: #071629;
+    padding: 60px 20px 80px 20px;
+    color: #fff;
+    font-family: 'Arial, sans-serif';
 }
 
 .footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
 }
 
 .footer-links {
-  display: flex;
-  gap: 10px;
-  margin: 10px 0;
+    display: flex;
+}
+
+.footer-links a {
+    margin-left: 20px;
 }
 
 .footer-links img {
-  width: 30px;
-  height: 30px;
+
+    transition: transform 0.3s ease;
+}
+
+.footer-links a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-copyright {
+    justify-content: center;
+    margin-top: 60px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 0.35;
+    font-size: 12px;
+    display: flex;
 }
