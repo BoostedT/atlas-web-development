@@ -61,6 +61,7 @@ body {
   color: #fff;
   flex-direction: column;
 }
+
 .hero h1 {
   font-size: 120px;
   position: relative;
@@ -88,6 +89,7 @@ body {
 .from-the-pros {
   color: white;
 }
+
 .block-1 {
   display: grid;
   justify-content: center;
@@ -111,6 +113,7 @@ body {
   border-radius: 25px;
   font-family: "Source Sans Pro";
 }
+
 .tagline {
   position: relative;
   font-size: 16px;
@@ -123,11 +126,13 @@ body {
   bottom: 19.5em;
   word-spacing: 5em;
 }
+
 .pros-section {
   position: relative;
   padding-top: 0;
   margin-top: -20%;
 }
+
 .pros {
   width: 100%;
   display: flex;
@@ -153,8 +158,6 @@ body {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 4px solid #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
 }
 
@@ -350,7 +353,7 @@ blockquote {
   color: #fff;
   font-family: "Source Sans Pro";
   text-align: center;
-  padding: 60px 0;
+  padding: 5px 0;
 }
 
 .membership-heading {
@@ -367,7 +370,8 @@ blockquote {
 /* Grid for the items */
 .membership-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columns */
   gap: 20px;
   max-width: 1000px;
   margin: 40px auto;
@@ -436,80 +440,77 @@ blockquote {
 }
 
 .faq-blocks {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-items: center;
 }
 
 .faq-block {
-    text-align: left;
-    padding: 20px;
+  text-align: left;
+  padding: 20px;
 }
 
 .faq h1 {
-    font-size: 60px;
-    font-weight: 300;
-    color: #333;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    font-family: "Source Sans Pro";
-    display: inline-block;
+  font-size: 60px;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 40px;
+  display: inline-block;
 }
 
 .faq h2 {
-    font-size: 16px;
-    font-family: "Source Sans Pro";
-    margin-bottom: 10px;
-    font-weight: bold;
+  font-size: 16px;
+  font-family: "Source Sans Pro";
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 /* Footer */
 footer {
-    background-color: #071629;
-    padding: 60px 20px 80px 20px;
-    color: #fff;
-    font-family: 'Arial, sans-serif';
+  background-color: #071629;
+  padding: 40px 0;
+  color: #fff;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .footer-links {
-    display: flex;
+  display: flex;
 }
 
 .footer-links a {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .footer-links img {
-
-    transition: transform 0.3s ease;
+  height: 50px;
+  transition: transform 0.3s ease;
 }
 
 .footer-links a:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .footer-copyright {
-    justify-content: center;
-    margin-top: 60px;
-    font-weight: 400;
-    color: #ffffff;
-    opacity: 0.35;
-    font-size: 12px;
-    display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.35;
+  font-size: 12px;
+  display: flex;
 }
